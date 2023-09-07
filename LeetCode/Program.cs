@@ -1,14 +1,20 @@
 ﻿using LeetCode.Easy;
 
-var array = new int[] { 2, 2, 4, 6 };
+var s = RomanToInt.Execute("IV");
 
-var target = 6;
+var strs = new string[] { "flower", "flow", "flight" };
 
-var result = TwoSum.Execute(array, target);
+var brackets = "(}";
+
+var res = LongestCommonPrefix.Execute(strs);
+
+var res2 = ValidPairbrackets.Execute(brackets);
+
+var ss = MergeList.MergeTwoLists(new ListNode(124), new ListNode(134));
+
+var result = RemoveDuplicatesFromArray.Execute(new int[] { 1,1,2});
 
 foreach (var item in result)
 {
-    Console.Write(item + " ");
+    Console.WriteLine(item);
 }
-
-Console.WriteLine(Polindrome.IsPalindorme(1222221));
